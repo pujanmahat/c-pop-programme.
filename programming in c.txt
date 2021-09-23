@@ -1,0 +1,563 @@
+1)
+#include <stdio.h>
+#include <conio.h>
+void main()
+{
+
+int n1;
+char ch;
+printf ("Enter a number:");
+scanf ("%d",&n1);
+printf ("Enter a character:");
+scanf (" %c",&ch);
+printf ("\nnumber:%d\tcharacter:%c",n1,ch);
+getch();
+}
+
+output:Enter a number:100
+       Enter a character:p
+       number:100      character:p
+
+2)
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+	char string[100];
+	printf("enter your name full name:");
+        scanf("%[^\n]",string);
+        printf("your full name is %s",string);
+	getch();
+	return 0;
+}
+
+output:enter your name full name:pujan mahat
+       your full name is pujan mahat
+
+3)
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+	int i=5;
+	printf("i=%d\ti=%d\ti=%d\ti=%d\ti=%d",i++,i--,++i,--i,i);
+	//return 0;
+}
+
+output:i=4     i=5     i=5     i=5     i=5
+--------------------------------
+Process exited after 0.03531 seconds with return value 0
+Press any key to continue . . .
+
+4)
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+	
+	int i=10;
+	printf("\ni=%d\ti=%d\ti=%d",i++,i++,++i);
+	int j=10;
+	printf("\nj=%d\tj=%d\tj=%d",j++,++j,j++);
+	return 0;
+	getch;
+}
+
+output:i=12    i=11    i=13
+       j=12    j=13    j=10
+--------------------------------
+Process exited after 0.1152 seconds with return value 0
+Press any key to continue . . .
+
+5)
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+	int i=5;
+	printf("\ni=%d\ti=%d\ti=%d\ti=%d\ti=%d",i++,i--,++i,i--,i);
+	return 0;
+	getch;
+}
+
+output:i=4     i=5     i=5     i=5     i=5
+--------------------------------
+Process exited after 0.2691 seconds with return value 0
+Press any key to continue . . .
+
+6)
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+	int b=0,a;
+	a=++b + ++b;
+	printf("a=%d\n",a);
+	printf("b=%d",b);
+	return 0;
+}
+
+output:a=4
+       b=2
+--------------------------------
+Process exited after 0.2202 seconds with return value 0
+Press any key to continue . . .
+
+7)
+#include <stdio.h>
+
+void main()
+{
+	int n;
+	printf("nenter a number;");
+	scanf("%d",&n);
+	if (n>=18)
+	
+	         {
+	         	printf("n you are eligible for voting");
+			 }
+	else		 
+	{
+			printf("\nyou are not elligible for voting");
+		}
+}
+output:nenter a number;19
+       n you are eligible for voting
+--------------------------------
+Process exited after 3.076 seconds with return value 29
+Press any key to continue . . .
+
+8)
+#include <stdio.h>
+#include <conio.h>
+void main()
+{
+	int a,b;
+	printf("\nenter two numbers:");
+	scanf("%d%d",&a,&b);
+	if(a>b)
+	{
+	
+	   
+	   printf("\n%d is larger than %d",a,b);
+    }
+	
+	  else
+	  {
+	  
+	   printf("\n%d is larger than%d",b,a);
+}
+}
+
+output:enter two numbers:20
+                         50
+
+50 is larger than20
+--------------------------------
+Process exited after 9.164 seconds with return value 20
+Press any key to continue . . .
+
+9)
+#include <stdio.h>
+#include <conio.h>
+void main()
+{
+	int a,b,c;
+	printf("enter any three numbers");
+	scanf("%d%d%d",&a,&b,&c);
+	if(a>b&&a>c)
+	     {
+	     	printf("%d is the largest number",a);
+		 }
+		else if(b>a && b>c)
+		{
+			printf("%d is the largest number ",b);
+		 }
+		 else
+		 {
+		 	printf("%d is the largest number ",c);
+		  } 
+}
+output:enter any three numbers 12
+                               24
+                               36
+       36 is the largest number
+
+10)
+#include <stdio.h>
+#include <conio.h>
+void main()
+{
+	int eng,nep,comp,eco,acc ,total;
+	float per;
+	printf("\nenter a marks of english");
+	scanf("%d",&eng);
+	printf("\nenter a marks of nepali");
+	scanf("%d",&nep);
+	printf("\nenter a marks of computer");
+	scanf("%d",&comp);
+	printf("\nenter a marks of economics");
+	scanf("%d",&eco);
+	printf("\nenter a marks of account:");
+	scanf("%d",&acc);
+	total=eng+nep+comp+eco+acc;
+	per=(float)total/5;
+	printf("\ntotal marks obtained=%d \ntotal percentage=%f",total,per);
+    if(eng>=35&&eco>=35&&nep>=35&&comp>=35&&acc>=35)
+    {
+    	if(per>=75)
+    	printf("\ndistinction");
+    	
+    	else if (per>=65)
+    	printf("\nfirst division");
+    	
+    	else if(per>=50)
+    	printf("\nsecond division");
+    	
+    else 
+    	printf("\nfailed");
+    	getch;
+    
+    	
+	}
+	
+}
+
+output:enter a marks of english75
+
+       enter a marks of nepali65
+
+       enter a marks of computer85
+
+       enter a marks of economics80
+
+       enter a marks of account:80
+
+       total marks obtained=385
+       total percentage=77.000000
+       distinction
+--------------------------------
+Process exited after 25.28 seconds with return value 12
+Press any key to continue . . .
+
+11)
+#include <stdio.h>
+#include <conio.h>
+void main()
+{
+	int i=1;                     //initialization
+	while(i<=100)                 //condition
+	{
+		printf("\n C is the best");
+		i=i+1;                     //increment
+	}
+}
+
+output:
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+ C is the best
+--------------------------------
+Process exited after 0.1092 seconds with return value 15
+Press any key to continue . . .
+
+12)
+#include <stdio.h>
+#include <conio.h>
+void main()
+{
+	int i=1;
+	while(i<=10)
+	{
+		printf("%d\t",i);
+		i++;
+	}
+}
+
+output:1       2       3       4       5       6       7       8       9       10
+--------------------------------
+Process exited after 0.1754 seconds with return value 3
+Press any key to continue . . .
+
+13)
+#include <stdio.h>
+#include <conio.h>
+void main()
+{
+	int i=100;
+	while(i>=1)
+	{
+		printf("%d\n",i);
+		i--;
+	}
+}
+output:100
+99
+98
+97
+96
+95
+94
+93
+92
+91
+90
+89
+88
+87
+86
+85
+84
+83
+82
+81
+80
+79
+78
+77
+76
+75
+74
+73
+72
+71
+70
+69
+68
+67
+66
+65
+64
+63
+62
+61
+60
+59
+58
+57
+56
+55
+54
+53
+52
+51
+50
+49
+48
+47
+46
+45
+44
+43
+42
+41
+40
+39
+38
+37
+36
+35
+34
+33
+32
+31
+30
+29
+28
+27
+26
+25
+24
+23
+22
+21
+20
+19
+18
+17
+16
+15
+14
+13
+12
+11
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+
+--------------------------------
+Process exited after 0.109 seconds with return value 2
+Press any key to continue . . .
+
+13)
+#include <stdio.h>
+#include <conio.h>
+void main()
+{
+	int i=5;
+	while(i<=100)
+	{
+		printf("%d\t",i);
+		i=i+5;
+	}
+}
+
+output:5       10      15      20      25      30      35      40      45      50      55      60      65      70      75
+        80      85      90      95      100
+--------------------------------
+Process exited after 0.1072 seconds with return value 4
+Press any key to continue . . .
+
+14)
+#include <stdio.h>
+void main()
+{
+	int i=1,sum=0;
+	while(i<=10)
+	{
+		sum=sum+i;
+		i++;
+	}
+		printf("sum of numbers from 1 to 10=%d",sum);	
+		
+	
+}
+output:sum of numbers from 1 to 10=55
+--------------------------------
+Process exited after 0.2283 seconds with return value 30
+Press any key to continue . .
+
+15)
+#include <stdio.h>
+void main()
+{
+	int i=1,sum=5;
+	while (i<=50)
+	{
+		sum=sum+i;
+		i++;
+	}
+	printf(" sum of numbers from 5 to 50=%d",sum);
+}
+output: sum of numbers from 5 to 50=1280
+--------------------------------
+Process exited after 0.1181 seconds with return value 33
+Press any key to continue . . .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
